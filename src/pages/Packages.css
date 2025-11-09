@@ -1,0 +1,109 @@
+/* Package Modal Styles */
+.package-modal .modal-content {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.package-modal .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.package-modal .modal-body {
+  padding-top: 0;
+}
+
+.package-modal .list-group-item {
+  border-left: none;
+  border-right: none;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.package-modal .list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.package-modal .list-group-item:first-child {
+  border-top: none;
+}
+
+.package-modal .list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* Package Item Styles */
+.package-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.package-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Header */
+.hero-header {
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Booking Section */
+.booking {
+  
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .package-modal .modal-body .row {
+    flex-direction: column;
+  }
+  
+  .package-modal .modal-body .col-md-6 {
+    width: 100%;
+  }
+  
+  .hero-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .booking {
+    padding: 2rem !important;
+  }
+}
+
+
+.payment-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.booking-summary {
+  background-color: #f8f9fa;
+}
+
+.form-control {
+  padding: 10px 15px;
+}
+
+/*.btn {
+  padding: 10px 20px;
+}*/

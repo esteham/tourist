@@ -1,0 +1,381 @@
+/* Booking Page Styles */
+.booking-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.booking-hero {
+  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  justify-content: center;
+  background: transparent;
+  padding: 0;
+}
+
+.breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
+
+/* Booking Container */
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  .booking-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cards */
+.booking-card, .summary-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 100%;
+}
+
+.card-header {
+  background: #3498db;
+  color: white;
+  padding: 20px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.card-header p {
+  margin: 5px 0 0;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+/* Form Styles */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  outline: none;
+}
+
+.read-only-input {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.date-note {
+  display: block;
+  margin-top: 5px;
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+/* Date Picker Customization */
+.date-picker-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.react-datepicker {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  border-color: #ddd;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+}
+
+.react-datepicker__current-month {
+  font-weight: 500;
+  color: #333;
+}
+
+.react-datepicker__day--selected {
+  background-color: #3498db;
+  color: white;
+}
+
+.react-datepicker__day--disabled {
+  color: #ccc;
+}
+
+/* Button */
+.submit-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Package Summary Styles */
+.package-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.package-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3498db;
+}
+
+.package-details {
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detail-item i {
+  margin-right: 10px;
+  color: #3498db;
+  width: 20px;
+  text-align: center;
+}
+
+.package-description {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.included-features {
+  margin-bottom: 25px;
+}
+
+.included-features h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.included-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.included-features li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.included-features i {
+  margin-right: 10px;
+  color: #2ecc71;
+}
+
+.no-items {
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Booking Timeline */
+.booking-timeline {
+  margin-bottom: 25px;
+}
+
+.booking-timeline h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.timeline-date {
+  width: 100px;
+  font-weight: 500;
+  color: #3498db;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-left: 15px;
+  position: relative;
+}
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: calc(100% - 10px);
+  width: 2px;
+  background: #3498db;
+}
+
+.timeline-content strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Price Summary */
+.price-summary {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.price-summary h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.price-row.total {
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-bottom: none;
+  padding-top: 12px;
+  margin-top: 5px;
+}
+
+/* No Package Selected */
+.no-package {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6c757d;
+}
+
+.no-package i {
+  font-size: 3rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.no-package h5 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Loading State */
+.booking-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.spinner-container {
+  text-align: center;
+}
+
+/* Error State */
+.booking-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.error-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
